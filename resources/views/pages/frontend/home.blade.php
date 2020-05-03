@@ -139,3 +139,11 @@
         @endif
     @endforeach
 @endsection
+
+@section('js')
+    <script>
+        var mobilevideo = document.getElementsByTagName("video")[0];
+        mobilevideo.setAttribute("playsinline", "");
+        mobilevideo.setAttribute("muted", "");
+    </script>
+@endsection

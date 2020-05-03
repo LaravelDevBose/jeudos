@@ -10,8 +10,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('backend/images/favicon.png')}}">
     <title>{{config('app.name')}} - @yield('title')</title>
     <style>
+        .herader-bg{
+            background-image: linear-gradient(-45deg, rgba(235, 64, 52, .5) 0%, rgba(218, 51, 33, .5) 39%, rgba(239, 117, 40, .5) 55%)!important;
+        }
         .custom-background {
-            background-image: var(--image-url);
+            /*background-image: var(--image-url);*/
             height: 325px;
             background-size: cover;
         }
@@ -108,8 +111,8 @@
 <div class="wrapper">
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <div class="container-full">
-            <div class="custom-background @yield('video-container')" style="@yield('hero-image')">
+        <div class="container-full herader-bg">
+            <div class="custom-background @yield('video-container')" style="background-image: @yield('hero-image')">
                 @yield('video')
                 <header class="main-header">
                     <nav class="navbar navbar-static-top py-2 px-5" style="margin-left: 0;">
@@ -292,11 +295,6 @@
         });
         setTimeout(() => $('.close').click(), 20000)
     });
-</script>
-<script>
-    var mobilevideo = document.getElementsByTagName("video")[0];
-    mobilevideo.setAttribute("playsinline", "");
-    mobilevideo.setAttribute("muted", "");
 </script>
 
 </body>
