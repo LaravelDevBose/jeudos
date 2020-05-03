@@ -213,7 +213,7 @@
                             @foreach($influencers as $influencer)
                                 <div class="col-md-4 col-xs-8">
                                     <a href="{{route('influencer-profile',$influencer->slug)}}">
-                                        <div class="card bg-white shadow"
+                                        <div class="card bg-white shadow influencer"
                                              style="border-radius: 10px; height: 210px; overflow: hidden">
                                             @if(!empty($influencer->profile_image_url) && !is_null($influencer->profile_image_url))
                                                 <img src="{{asset($influencer->profile_image_url)}}"
@@ -225,7 +225,7 @@
                                                      style="border-radius: 10px; height: 100%; width: 100%"/>
                                             @endif
                                             <div class="card-img-overlay"
-                                                 style="background-color: #000; opacity: .5; border-radius: 10px;">
+                                                 >
                                                 <h4 class="text-white">{{$influencer->name}}</h4>
                                                 <h6 class="text-white">{{$influencer->title}}</h6>
                                                 <h4 class="text-white mt-100 pr-0">

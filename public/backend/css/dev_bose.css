@@ -41,4 +41,9 @@
     .logo-c{
         margin: 0 auto 1rem;
     }
+    .signUp .btn-block {
+        display: block;
+        width: 70%;
+        margin: 0 auto 1rem;
+    }
 }

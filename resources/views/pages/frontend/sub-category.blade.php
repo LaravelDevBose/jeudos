@@ -23,13 +23,13 @@
         @foreach($influencers as $influencer)
             <div class="col-xl-2 col-lg-3 col-sm-5 col-xs-8 col-10">
                 <a href="{{route('influencer-profile',$influencer->slug)}}">
-                    <div class="card bg-white shadow" style="border-radius: 10px; height: 210px; overflow: hidden">
+                    <div class="card bg-white shadow influencer">
                         @if(!empty($influencer->profile_image_url) && !is_null($influencer->profile_image_url))
                             <img src="{{asset($influencer->profile_image_url)}}" alt="{{$influencer->name}}" class="card-img" style="border-radius: 10px; height: 100%; width: 100%"/>
                         @else
                             <img src="{{asset('backend/images/user.png')}}" alt="{{$influencer->name}}" class="card-img" style="border-radius: 10px; height: 100%; width: 100%"/>
                         @endif
-                        <div class="card-img-overlay" style="background-color: #000; opacity: .5; border-radius: 10px;">
+                        <div class="card-img-overlay" >
                             <h4 class="text-white">{{$influencer->name}}</h4>
                             <h6 class="text-white">{{$influencer->title}}</h6>
                             <h4 class="text-white mt-100 pr-0"><small>&#36;{{number_format($influencer->rate)}}</small></h4>

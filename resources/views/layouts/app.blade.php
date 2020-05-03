@@ -91,6 +91,12 @@
             transform: translateX(-50%) translateY(-50%);
             z-index: -100;
         }
+        .influencer img{
+            background-color: #000;
+            opacity: .79;
+            border-radius: 10px;
+        }
+
     </style>
 
     @include('partials.backend.css')
@@ -216,7 +222,7 @@
                         <div class="col-md-2">
                             <p>Enroll as Influencer</p>
                             <div class="subscribe-box clearfix">
-                                <div class="subscribe-form-wrap">
+                                <div class="subscribe-form-wrap signUp">
                                     <a href="{{url('register-influencer')}}"
                                        class="btn btn-block btn-outline-light"> Sign Up</a>
                                 </div>
