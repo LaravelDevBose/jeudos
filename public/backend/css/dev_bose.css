@@ -1,0 +1,44 @@
+.profile-section h3 small{
+    font-size: 16px!important;
+}
+.profile-section h6{
+    font-size: 14px!important;
+}
+
+.sidebar-menu li{
+    font-size: 18px!important;
+}
+
+.form-horizontal .control-label{
+    font-size: 16px!important;
+}
+
+.box-profile p{
+    font-size: 15px!important;
+}
+
+.box-profile ul li{
+    font-size: 15px!important;
+}
+
+@media screen and (max-width: 992px) {
+    .avatar-xxxl2 {
+        width: 180px;
+        height: 180px;
+        line-height: 128px;
+        font-size: 1.857rem;
+    }
+    .w-btn, .b-btn{
+        width: 100%!important;
+        margin-top: 1rem;
+    }
+    .video-con-sec h1{
+        display: none;
+    }
+    .video-con-sec h5{
+       font-size: 1.5rem;
+    }
+    .logo-c{
+        margin: 0 auto 1rem;
+    }
+}
